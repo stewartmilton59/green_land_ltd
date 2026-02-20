@@ -5,7 +5,9 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include("arusha_milk_ltd.urls")),
+    path("", include("main.urls")),
+    path("arusha_milk_ltd/", include("arusha_milk_ltd.urls")),
+
 ]
 
 if settings.DEBUG:

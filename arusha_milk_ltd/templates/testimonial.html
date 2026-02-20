@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Testimonials</h1>
+            <div class="d-inline-flex mb-lg-5">
+                <p class="m-0 text-white"><a class="text-white" href="{% url 'index' %}">Home</a></p>
+                <p class="m-0 text-white px-2">/</p>
+                <p class="m-0 text-white">Testimonials</p>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+       <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonial</h4>
+                <h1 class="display-4">Trusted by Arusha</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid" src="{% static "arusha_milk_ltd/img/testimonial-1.jpg" %}" alt="Hotel manager">
+                        <div class="ml-3">
+                            <h4>Grace Mushi</h4>
+                            <i>Karisimbi Hotel</i>
+                        </div>
+                    </div>
+                    <p class="m-0">We use Arusha Milk for our breakfast buffet. Consistent quality and reliable 6am delivery. Our guests love the creamy yogurt.</p>
+                </div>
+                <div class="testimonial-item">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid" src="{% static "arusha_milk_ltd/img/testimonial-2.jpg" %}" alt="Cafe owner">
+                        <div class="ml-3">
+                            <h4>Juma Salim</h4>
+                            <i>Mount Meru Cafe</i>
+                        </div>
+                    </div>
+                    <p class="m-0">The fresh whole milk makes the best chai. I've been a customer for three years – never a single complaint.</p>
+                </div>
+                <div class="testimonial-item">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid" src="{% static "arusha_milk_ltd/img/testimonial-3.jpg" %}" alt="Mother">
+                        <div class="ml-3">
+                            <h4>Anna Thomas</h4>
+                            <i>Home customer</i>
+                        </div>
+                    </div>
+                    <p class="m-0">I order every Monday and Thursday. The kids love the strawberry yogurt, and I trust it's natural.</p>
+                </div>
+                <div class="testimonial-item">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid" src="{% static "arusha_milk_ltd/img/testimonial-4.jpg" %}" alt="Restaurant chef">
+                        <div class="ml-3">
+                            <h4>Bakari Hassan</h4>
+                            <i>Alford Restaurant</i>
+                        </div>
+                    </div>
+                    <p class="m-0">Cheap prices don't matter if the milk is watered. Arusha Milk is always full cream. Our pilau and desserts are top notch.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+{% endblock %}

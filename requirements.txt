@@ -1,0 +1,6 @@
+Django
+django-unfold
+gunicorn
+pillow
+whitenoise
+psycopg2-binary

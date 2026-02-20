@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Order Delivery</h1>
+            <div class="d-inline-flex mb-lg-5">
+                <p class="m-0 text-white"><a class="text-white" href="{% url 'index' %}">Home</a></p>
+                <p class="m-0 text-white px-2">/</p>
+                <p class="m-0 text-white">Order</p>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Order / Quote Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="reservation position-relative overlay-top overlay-bottom">
+                <div class="row align-items-center">
+                    <!-- Left side: offer & benefits -->
+                    <div class="col-lg-6 my-5 my-lg-0">
+                        <div class="p-5">
+                            <div class="mb-4">
+                                <h1 class="display-3 text-primary">15% OFF</h1>
+                                <h1 class="text-white">Your First Order</h1>
+                            </div>
+                            <p class="text-white">Place your first dairy order online and enjoy 15% discount. Free delivery in Arusha city for orders above TSh 10,000.</p>
+                            <ul class="list-inline text-white m-0">
+                                <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Farm-fresh milk – never powdered</li>
+                                <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Chilled doorstep delivery before 7 AM</li>
+                                <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Return glass bottles & help the environment</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Right side: order form -->
+                    <div class="col-lg-6">
+                        <div class="text-center p-5" style="background: rgba(51, 33, 29, .8);">
+                            <h1 class="text-white mb-4 mt-5">Request Delivery</h1>
+                            <form class="mb-5">
+                                <div class="form-group">
+                                    <input type="text" class="form-control bg-transparent border-primary p-4" placeholder="Full Name" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control bg-transparent border-primary p-4" placeholder="Email Address" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control bg-transparent border-primary p-4" placeholder="Phone (e.g. 0760 144 638)" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control bg-transparent border-primary p-4" placeholder="Delivery Address (street/area)" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <select class="custom-select bg-transparent border-primary px-4" style="height: 49px;">
+                                        <option selected>Select Product</option>
+                                        <option value="whole-milk">Whole Fresh Milk – 1L (TSh 2,500)</option>
+                                        <option value="skimmed-milk">Skimmed Milk – 1L (TSh 2,200)</option>
+                                        <option value="mala">Mala (Cultured) – 500ml (TSh 3,000)</option>
+                                        <option value="yogurt-natural">Natural Yogurt – 200g (TSh 1,800)</option>
+                                        <option value="yogurt-fruit">Fruit Yogurt – 200g (TSh 2,000)</option>
+                                        <option value="cheese">Soft White Cheese – 250g (TSh 4,500)</option>
+                                        <option value="mixed">Mixed Crate (ask for quote)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <div class="date" id="date" data-target-input="nearest">
+                                        <input type="text" class="form-control bg-transparent border-primary p-4 datetimepicker-input" placeholder="Preferred Delivery Date" data-target="#date" data-toggle="datetimepicker"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="time" id="time" data-target-input="nearest">
+                                        <input type="text" class="form-control bg-transparent border-primary p-4 datetimepicker-input" placeholder="Preferred Time (e.g. 6–8 AM)" data-target="#time" data-toggle="datetimepicker"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control bg-transparent border-primary p-4" rows="2" placeholder="Additional notes (quantity, special instructions)"></textarea>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary btn-block font-weight-bold py-3" type="submit">Place Order</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Order / Quote End -->
+{% endblock %}

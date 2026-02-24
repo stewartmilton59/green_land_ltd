@@ -4,3 +4,8 @@ gunicorn
 pillow
 whitenoise
 psycopg2-binary
+django-constance
+django-constance
+django-simple-history
+django-guardian
+django-import-export

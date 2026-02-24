@@ -13,6 +13,6 @@ urlpatterns = [
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-admin.site.index_title = "Arush_Milk_ltd"
-admin.site.site_header = "Arush_Milk_ltd"
-admin.site.site_title = "Arush_Milk_ltd"
+admin.site.index_title = "Green_Land_Company_ltd"
+admin.site.site_header = "Green_Land_Company_ltd"
+admin.site.site_title = "Green_Land_Company_ltd"
